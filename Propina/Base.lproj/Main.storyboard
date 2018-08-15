@@ -22,19 +22,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HVQ-iC-8eD">
-                                <rect key="frame" x="23" y="28" width="314" height="30"/>
+                                <rect key="frame" x="35" y="28" width="314" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="nii-6L-tT0">
-                                <rect key="frame" x="33" y="83" width="295" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="changetip:" destination="BYZ-38-t0r" eventType="valueChanged" id="PaI-ME-tCd"/>
-                                </connections>
-                            </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C7e-cW-hAh">
                                 <rect key="frame" x="294" y="145" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -98,15 +91,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="nii-6L-tT0">
+                                <rect key="frame" x="45" y="83" width="295" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="doChangepropina:" destination="BYZ-38-t0r" eventType="valueChanged" id="pMb-nc-GAy"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" red="0.66906636286031773" green="0.64969322679644792" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
-                        <outlet property="porcentaje" destination="C7e-cW-hAh" id="3RJ-Nj-Kr7"/>
-                        <outlet property="procentajepropina" destination="Tgk-kB-7eE" id="3xs-os-l21"/>
-                        <outlet property="propropina" destination="Tgk-kB-7eE" id="iHR-Q6-qHD"/>
-                        <outlet property="slider" destination="nii-6L-tT0" id="tzB-FH-Hmp"/>
-                        <outlet property="txtdinero" destination="HVQ-iC-8eD" id="WaP-xm-ddQ"/>
+                        <outlet property="lblcantidadporcentaje" destination="Tgk-kB-7eE" id="TZj-71-U7g"/>
+                        <outlet property="lblcantidadtotal" destination="QZB-fJ-jU0" id="EY2-oP-Mp7"/>
+                        <outlet property="lblporcentajepropina" destination="eTB-cF-YE3" id="9Pp-Od-eY4"/>
+                        <outlet property="sldporcentajepropina" destination="nii-6L-tT0" id="RMw-dU-1Bn"/>
+                        <outlet property="txttotal" destination="HVQ-iC-8eD" id="3YU-et-Xgj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
